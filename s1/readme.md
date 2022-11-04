@@ -10,9 +10,10 @@
 > infovis/s1/bump00.jpg/png/svg
 > stackAreaChart.jpg/png/svg
 
+[original-Line Chart, Index Chart](https://observablehq.com/@d3/index-chart)<br>
 
 [First results with Tableau](https://public.tableau.com/views/Makeover2022/Dashboard1?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link) <br>
 
-[First results with Observable](https://manueldvr.github.io/infovis/s1/proto_00.html)
+[First results with Observable](https://manueldvr.github.io/infovis/s1/proto_00.html)<br>
 
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)<br>
