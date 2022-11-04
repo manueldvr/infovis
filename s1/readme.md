@@ -7,8 +7,8 @@
 > Glossary: FanGraphs.<br>
 
 ### First viz:
-> infovis/s1/bump00.jpg/png/svg
-> stackAreaChart.jpg/png/svg
+> infovis/s1/bump00.jpg/png/svg<br>
+> stackAreaChart.jpg/png/svg<br>
 
 [original Line Chart Index Chart](https://observablehq.com/@d3/index-chart)
 
