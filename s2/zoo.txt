@@ -1,10 +1,20 @@
 notas:
 
-One must determine which questions to ask, identify the appropriate data, and select effective visual encodings to map data values to graphical features such as position, size, shape, and color.
+https://queue.acm.org/detail.cfm?id=1805128
+
+A Tour through the Visualization Zoo_____________________________________________
+
+_INTRO__________________________________________________________________________
+
+One must determine which questions to ask, identify the appropriate data,
+and select effective visual encodings to map data values to graphical features
+such as position, size, shape, and color.
 
 
-By making data more accessible and appealing, visual representations may also help engage more diverse audiences in exploration and analysis.
-Challenge is to create effective and engaging visualizations that are appropriate to the data.
+By making data more accessible and appealing, visual representations may also
+help engage more diverse audiences in exploration and analysis.
+Challenge is to create effective and engaging visualizations that are
+appropriate to the data.
 
 
 Nuanced judgments:
@@ -28,6 +38,7 @@ all visualizations share a common "DNA" :
     -a set of mappings between data properties and visual attributes such as position, size, shape, and color—
     and that customized species of visualization might always be constructed by varying these encodings.
 
+________________________________________________________________________________
 
 INDEX CHARTS
       time-series data.
@@ -38,7 +49,7 @@ INDEX CHARTS
                     collection of time-series data -based on a selected index point?.
 
                       [http://hci.stanford.edu/jheer/files/zoo/ex/time/index-chart.html]
-
+________________________________________________________________________________
 STACKED GRAPHS
       time-series data.
       time-series data seen in aggregate.
@@ -50,7 +61,7 @@ STACKED GRAPHS
         not support of negatives
         not significance for data that should not be summed
         problems with trends that lie atop other curves.
-
+________________________________________________________________________________
 
 SMALL MULTIPLES
     plotted within the same axes, as in the INDEX CHARTS.
@@ -59,6 +70,7 @@ SMALL MULTIPLES
     series can be compared, trends, seasonal patterns in sectors.
     +can be constructed for just about any type of visualization: bar charts, pie charts, maps, etc.
 
+________________________________________________________________________________
 
 HORIZONTAL GRAPHS
     increasing the data density of a time-series view while preserving resolution.
@@ -70,6 +82,7 @@ HORIZONTAL GRAPHS
           preserves data resolution , reducing space (a quarter), doubling data density.
           didviding into bands and layering creating a nested form.
 
+________________________________________________________________________________
 
 STATISTICAL DISTRIBUTIONS
     How a set of numbers is distributed and
@@ -80,12 +93,104 @@ STATISTICAL DISTRIBUTIONS
                   insight on how data is distributed and
                   take decisions for modeling
       techniques:
-                  histogram, which shows the prevalence of values grouped into bins,
+                  histogram, which shows the prevalence of bins gouped values,
                   and the box-and-whisker plot, which can convey statistical features such as
                       the mean, median, quartile boundaries,
                       or extreme outliers.
                   In addition, a number of other techniques exist for assessing a distribution and
                       examining interactions between multiple dimensions.
 
+________________________________________________________________________________
 STEM-AND-LEAF PLOTS
-    alternative to Histogram        
+    alternative to Histogram
+    bins numbers
+    frequency distribution with the data itself
+    identifies clusters
+
+________________________________________________________________________________
+
+Q-Q PLOTS
+  compares 2 probability distributions
+  by graphing their quantiles against each other
+  according to its distribution can be identified:
+    The 2 are similar
+      => plotted values will lie aprox along the central diagonal.
+    The 2 are linearly related
+      => plotted values will lie aprox along the central diagonal,
+         with varying slope and intercept.
+  *used with SMALL MULTIPLES can compare distributions,
+  http://hci.stanford.edu/jheer/files/zoo/ex/stats/qqplot.html.
+
+________________________________________________________________________________
+
+
+SPLOM  (SCATTER PLOT  Matrix)
+  shows relationships among multiple variables - Multivariate
+  problems that solve:
+    Multivariate data =  +3 dimensions comparation.
+    enables visual inspection of correlations between any pair of variables.
+
+  Uses SMALL MULTIPLES scatter plots.
+  Used with brushing-and-linking.
+
+
+________________________________________________________________________________
+
+PARALLEL COORDINATES
+  Shows relationships among multiple variables - Multivariate
+  Detects
+    +inverse correlations.
+    +patterns finding.
+  Allows interactive querying to filter between dimensions.
+  Compacts
+
+________________________________________________________________________________
+
+MAPS
+  some time based upon cartographic projection.
+  some distort or abstract geographic features.
+
+
+  FLOW MAPS
+    placing stroked lines on top of a geographic map.
+    depict the movement of a quantity in space and (implicitly) in time
+    encode Multivariate data.
+
+  CHOROPLETH MAPS
+    collected and aggregated by geographical areas.
+    use a color encoding
+    +use normalized Data
+    -perception can be affected by shaded values and area.
+
+  GRADUATED SYMBOL MAPS
+    places symbols over an underlying map.
+    +avoid confounding areas with data values.
+    +allows more dimensions
+
+  CARTOGRAMS
+
+________________________________________________________________________________
+
+
+
+________________________________________________________________________________
+
+
+
+
+________________________________________________________________________________
+
+
+
+
+________________________________________________________________________________
+
+
+
+
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
