@@ -1,1 +1,91 @@
 notas:
+
+One must determine which questions to ask, identify the appropriate data, and select effective visual encodings to map data values to graphical features such as position, size, shape, and color.
+
+
+By making data more accessible and appealing, visual representations may also help engage more diverse audiences in exploration and analysis.
+Challenge is to create effective and engaging visualizations that are appropriate to the data.
+
+
+Nuanced judgments:
+
+ One must determine
+	which questions to ask,
+	identify the appropriate data, and
+	select effective visual encodings to map data values to graphical features such as position, size, shape, and color.
+	Challenge is that for any given data set the number of visual encodings —and thus the space of possible visualization designs—is extremely large.
+
+How well different encodings facilitate the comprehension of data types such as numbers, categories, and networks.
+
+  example:
+    graphical perception experiments find that spatial position (as in a scatter plot or bar chart)
+    leads to the most accurate decoding of numerical data and
+    is generally preferable to visual variables such as angle, one-dimensional length, two-dimensional area, three-dimensional volume, and color saturation.
+    Thus, it should be no surprise that the most common data graphics, including bar charts, line charts, and scatter plots, use position encodings.
+    Our understanding of graphical perception remains incomplete, however, and must appropriately be balanced with interaction design and aesthetics.
+
+all visualizations share a common "DNA" :
+    -a set of mappings between data properties and visual attributes such as position, size, shape, and color—
+    and that customized species of visualization might always be constructed by varying these encodings.
+
+
+INDEX CHARTS
+      time-series data.
+      relative changes are more important than raw values
+      after normalization acquire more significance.
+
+      INDEX CHARTS= interactive line chart that shows percentage changes for a
+                    collection of time-series data -based on a selected index point?.
+
+                      [http://hci.stanford.edu/jheer/files/zoo/ex/time/index-chart.html]
+
+STACKED GRAPHS
+      time-series data.
+      time-series data seen in aggregate.
+      stacking  area charts genberates a visual summarization of time-series.
+      results:
+        ilustrate aggregate patterns + drill-down in a subset of time-series
+        ¿compare patterns?
+      limitations:
+        not support of negatives
+        not significance for data that should not be summed
+        problems with trends that lie atop other curves.
+
+
+SMALL MULTIPLES
+    plotted within the same axes, as in the INDEX CHARTS.
+    showing each series in its own chart
+    normalized
+    series can be compared, trends, seasonal patterns in sectors.
+    +can be constructed for just about any type of visualization: bar charts, pie charts, maps, etc.
+
+
+HORIZONTAL GRAPHS
+    increasing the data density of a time-series view while preserving resolution.
+    Mirrors by
+      .ploting negative values as positives
+          preserves data resolution , reducing space,
+          doubling data density.
+      .ploting negative values as positives
+          preserves data resolution , reducing space (a quarter), doubling data density.
+          didviding into bands and layering creating a nested form.
+
+
+STATISTICAL DISTRIBUTIONS
+    How a set of numbers is distributed and
+    thus help an analyst better understand
+    the statistical properties of the data.
+    Exploratory data analysis:
+      objective:
+                  insight on how data is distributed and
+                  take decisions for modeling
+      techniques:
+                  histogram, which shows the prevalence of values grouped into bins,
+                  and the box-and-whisker plot, which can convey statistical features such as
+                      the mean, median, quartile boundaries,
+                      or extreme outliers.
+                  In addition, a number of other techniques exist for assessing a distribution and
+                      examining interactions between multiple dimensions.
+
+STEM-AND-LEAF PLOTS
+    alternative to Histogram        
