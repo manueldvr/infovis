@@ -4,7 +4,7 @@
 + [Dashboard of 2022w44, Fundraising by Members of the 117th Congress -- with Tableau.](https://manueldvr.github.io/infovis/s2/Dashboard2022w44.html)
 + [Raised amount in millions by Party makeover w44 --with Flourish](https://manueldvr.github.io/infovis/s2/flourish_Beeswarm_w44.html)
 + [Raised amount by State Hierarchy Bar makeover w44 --with Flourish](https://manueldvr.github.io/infovis/s2/flourish_HierarchicalBars.html)
-+ [Raised Vs Spent --with Vega](https://manueldvr.github.io/infovis/s2/SpentVSRised.html)
++ [Raised Vs Spent --with Vega](https://manueldvr.github.io/infovis/s2/SpentVSRaised.html)
 
 ## links:
 + [THE SPAGHETTI PLOT](https://www.data-to-viz.com/caveat/spaghetti.html)
