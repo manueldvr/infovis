@@ -1,5 +1,7 @@
 # S2
 
+## Works
++ [Tableou Dashboard of 2022w44](https://manueldvr.github.io/infovis/s2/Dashboard2022w44.html)
 
 ## links:
 + [THE SPAGHETTI PLOT](https://www.data-to-viz.com/caveat/spaghetti.html)
