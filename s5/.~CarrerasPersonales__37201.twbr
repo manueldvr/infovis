@@ -1,0 +1,1275 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Libro1carreras' inline='true' name='federated.0aw18ze05z2w421e2i3oj1dazgs0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Libro1carreras' name='textscan.1di80nw1tiprxo1cjb3p60lwvkvv'>
+            <connection class='textscan' directory='/Users/manuelvargas/Documents/ITBA-Maestria- Especialización en Ciencia de Datos/clases/Visualizacion/_github_/infovis/s5' filename='Libro1carreras.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='Libro1carreras.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=';' />
+          <relation connection='textscan.1di80nw1tiprxo1cjb3p60lwvkvv' name='Libro1carreras.csv' table='[Libro1carreras#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+              <column datatype='integer' name='carreraid' ordinal='0' />
+              <column datatype='real' name='distancia' ordinal='1' />
+              <column datatype='datetime' name='ritmo' ordinal='2' />
+              <column datatype='datetime' name='tiempo' ordinal='3' />
+              <column datatype='integer' name='calorias' ordinal='4' />
+              <column datatype='integer' name='elevacion' ordinal='5' />
+              <column datatype='date' name='fecha' ordinal='6' />
+              <column datatype='string' name='lugar' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='Libro1carreras.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=';' />
+          <relation connection='textscan.1di80nw1tiprxo1cjb3p60lwvkvv' name='Libro1carreras.csv' table='[Libro1carreras#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+              <column datatype='integer' name='carreraid' ordinal='0' />
+              <column datatype='real' name='distancia' ordinal='1' />
+              <column datatype='datetime' name='ritmo' ordinal='2' />
+              <column datatype='datetime' name='tiempo' ordinal='3' />
+              <column datatype='integer' name='calorias' ordinal='4' />
+              <column datatype='integer' name='elevacion' ordinal='5' />
+              <column datatype='date' name='fecha' ordinal='6' />
+              <column datatype='string' name='lugar' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carreraid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[carreraid]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>carreraid</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distancia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[distancia]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>distancia</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ritmo</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[ritmo]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>ritmo</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tiempo</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[tiempo]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>tiempo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calorias</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calorias]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>calorias</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>elevacion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[elevacion]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>elevacion</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fecha</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[fecha]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>fecha</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lugar</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lugar]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>lugar</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Libro1carreras.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Libro1carreras.csv' datatype='table' name='[__tableau_internal_object_id__].[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]' role='measure' type='quantitative' />
+      <column caption='Calorias' datatype='integer' name='[calorias]' role='measure' type='quantitative' />
+      <column caption='Carreraid' datatype='integer' name='[carreraid]' role='measure' type='quantitative' />
+      <column caption='Distancia' datatype='real' name='[distancia]' role='measure' type='quantitative' />
+      <column caption='Elevacion' datatype='integer' name='[elevacion]' role='measure' type='quantitative' />
+      <column caption='Fecha' datatype='date' name='[fecha]' role='dimension' type='ordinal' />
+      <column caption='Lugar' datatype='string' name='[lugar]' role='dimension' type='nominal' />
+      <column caption='Ritmo' datatype='datetime' name='[ritmo]' role='dimension' type='ordinal' />
+      <column caption='Tiempo' datatype='datetime' name='[tiempo]' role='dimension' type='ordinal' />
+      <column-instance column='[lugar]' derivation='None' name='[none:lugar:nk]' pivot='key' type='nominal' />
+      <column-instance column='[fecha]' derivation='Year' name='[yr:fecha:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='/Users/manuelvargas/Documents/ITBA/data/VAST-Challenge-2022/Datasets/TPVIZgenerados/Libro1carreras.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/17/2022 10:14:58 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Libro1carreras' increment-value='%null%' refresh-type='create' rows-inserted='56' timestamp-start='2022-11-17 22:14:58.034' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>carreraid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[carreraid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>carreraid</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Libro1carreras.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distancia</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[distancia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distancia</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Libro1carreras.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ritmo</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[ritmo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ritmo</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Libro1carreras.csv+</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tiempo</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[tiempo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tiempo</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Libro1carreras.csv+</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calorias</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calorias]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calorias</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Libro1carreras.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>elevacion</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[elevacion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>elevacion</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Libro1carreras.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fecha</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[fecha]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fecha</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Libro1carreras.csv+</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lugar</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lugar]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lugar</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Libro1carreras.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:fecha:ok]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>2019</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:lugar:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Centenario&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Palermo&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Sta Rosa&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Libro1carreras.csv' id='Libro1carreras.csv_7EDAFBD1DEAC4BD0B6BAC142136E121B'>
+            <properties context=''>
+              <relation all='true' name='Libro1carreras.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=';' />
+                <relation connection='textscan.1di80nw1tiprxo1cjb3p60lwvkvv' name='Libro1carreras.csv' table='[Libro1carreras#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+                    <column datatype='integer' name='carreraid' ordinal='0' />
+                    <column datatype='real' name='distancia' ordinal='1' />
+                    <column datatype='datetime' name='ritmo' ordinal='2' />
+                    <column datatype='datetime' name='tiempo' ordinal='3' />
+                    <column datatype='integer' name='calorias' ordinal='4' />
+                    <column datatype='integer' name='elevacion' ordinal='5' />
+                    <column datatype='date' name='fecha' ordinal='6' />
+                    <column datatype='string' name='lugar' ordinal='7' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='CaloriasXKMxTiempo'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Calorías consumidas por KM por velocidad en minutos
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Libro1carreras' name='federated.0aw18ze05z2w421e2i3oj1dazgs0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aw18ze05z2w421e2i3oj1dazgs0'>
+            <column caption='Calorias' datatype='integer' name='[calorias]' role='measure' type='quantitative' />
+            <column caption='Carreraid' datatype='integer' name='[carreraid]' role='measure' type='quantitative' />
+            <column caption='Distancia' datatype='real' name='[distancia]' role='measure' type='quantitative' />
+            <column caption='Fecha' datatype='date' name='[fecha]' role='dimension' type='ordinal' />
+            <column-instance column='[tiempo]' derivation='Minute' name='[mi:tiempo:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[calorias]' derivation='Sum' name='[sum:calorias:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[carreraid]' derivation='Sum' name='[sum:carreraid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[distancia]' derivation='Sum' name='[sum:distancia:qk]' pivot='key' type='quantitative' />
+            <column caption='Tiempo' datatype='datetime' name='[tiempo]' role='dimension' type='ordinal' />
+            <column-instance column='[fecha]' derivation='Year' name='[yr:fecha:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:fecha:ok]' />
+              <groupfilter function='member' level='[yr:fecha:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' field-type='quantitative' max='759' min='100' minor-origin='0' minor-spacing='10' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' scope='cols' value='Calorias consumidas' />
+            <encoding attr='space' class='0' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:distancia:qk]' field-type='quantitative' max='12.0' min='2.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:distancia:qk]' scope='rows' value='Distancia en KM' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[mi:tiempo:ok]' field-type='ordinal' max-size='1' min-size='0.414066' type='catsize' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[mi:tiempo:ok]' />
+              <lod column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:carreraid:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Minutos:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0aw18ze05z2w421e2i3oj1dazgs0].[mi:tiempo:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Calorias:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>CarreraID:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:carreraid:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Distancia:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:distancia:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1877857446670532' />
+                <format attr='mark-color' value='#b30c1a' />
+                <format attr='mark-transparency' value='152' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#b30c1a' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:distancia:qk]</rows>
+        <cols>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]</cols>
+      </table>
+      <simple-id uuid='{777CC446-7800-4270-961A-91D48D724146}' />
+    </worksheet>
+    <worksheet name='CaloriasXMes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Calorias consumidas x Año y Mes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Libro1carreras' name='federated.0aw18ze05z2w421e2i3oj1dazgs0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aw18ze05z2w421e2i3oj1dazgs0'>
+            <column caption='Calorias' datatype='integer' name='[calorias]' role='measure' type='quantitative' />
+            <column caption='Fecha' datatype='date' name='[fecha]' role='dimension' type='ordinal' />
+            <column-instance column='[fecha]' derivation='Month' name='[mn:fecha:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[fecha]' derivation='Quarter' name='[qr:fecha:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[calorias]' derivation='Sum' name='[sum:calorias:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[fecha]' derivation='Year' name='[yr:fecha:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' />
+              <text column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]' />
+              <color column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]' />
+              <lod column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[qr:fecha:ok]' />
+              <lod column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[mn:fecha:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='20' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#898989' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{027184D0-88DB-4A7F-B52C-19898DE46669}' />
+    </worksheet>
+    <worksheet name='c.p.DistXLugar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total de distancia por Lugar</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Libro1carreras' name='federated.0aw18ze05z2w421e2i3oj1dazgs0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aw18ze05z2w421e2i3oj1dazgs0'>
+            <column caption='Distancia' datatype='real' name='[distancia]' role='measure' type='quantitative' />
+            <column caption='Lugar' datatype='string' name='[lugar]' role='dimension' type='nominal' />
+            <column-instance column='[lugar]' derivation='None' name='[none:lugar:nk]' pivot='key' type='nominal' />
+            <column-instance column='[distancia]' derivation='Sum' name='[sum:distancia:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:lugar:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:lugar:nk]' />
+              <groupfilter function='member' level='[none:lugar:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:lugar:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:distancia:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:lugar:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:distancia:qk]' scope='cols' value='Distancia en kilómetros' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:lugar:nk]</rows>
+        <cols>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:distancia:qk]</cols>
+      </table>
+      <simple-id uuid='{80FFA6D3-7CD7-46DC-97EA-5E9E984F51AB}' />
+    </worksheet>
+    <worksheet name='c.p.ElevXFecha'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Libro1carreras' name='federated.0aw18ze05z2w421e2i3oj1dazgs0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aw18ze05z2w421e2i3oj1dazgs0'>
+            <column-instance column='[lugar]' derivation='Attribute' name='[attr:lugar:nk]' pivot='key' type='nominal' />
+            <column caption='Calorias' datatype='integer' name='[calorias]' role='measure' type='quantitative' />
+            <column caption='Elevacion' datatype='integer' name='[elevacion]' role='measure' type='quantitative' />
+            <column caption='Fecha' datatype='date' name='[fecha]' role='dimension' type='ordinal' />
+            <column caption='Lugar' datatype='string' name='[lugar]' role='dimension' type='nominal' />
+            <column-instance column='[elevacion]' derivation='None' name='[none:elevacion:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[calorias]' derivation='Sum' name='[sum:calorias:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[elevacion]' derivation='Sum' name='[sum:elevacion:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[fecha]' derivation='Day-Trunc' name='[tdy:fecha:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[fecha]' derivation='Year' name='[yr:fecha:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:fecha:ok]' />
+              <groupfilter function='member' level='[yr:fecha:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[tdy:fecha:ok]' value='111' />
+            <format attr='title' class='0' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:elevacion:qk]' scope='rows' value='Elevacion en metros' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[tdy:fecha:ok]' value='S' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:elevacion:qk]' num-steps='10' type='interpolated' />
+            <encoding attr='color' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:elevacion:qk]' num-steps='10' type='interpolated' />
+            <encoding attr='size' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' field-type='quantitative' max-size='1' min-size='0' type='centersize' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' value='Calorias'>
+              <formatted-text>
+                <run>Calorias</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:elevacion:qk]' />
+              <size column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' />
+              <tooltip column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[attr:lugar:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='4.6191134452819824' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:elevacion:qk]</rows>
+        <cols>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[tdy:fecha:ok]</cols>
+      </table>
+      <simple-id uuid='{BD4BCA63-371D-4762-9375-5A3448D78DE3}' />
+    </worksheet>
+    <worksheet name='c.p.ElevXLugar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Promedio de Elevacion por Lugar</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Libro1carreras' name='federated.0aw18ze05z2w421e2i3oj1dazgs0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aw18ze05z2w421e2i3oj1dazgs0'>
+            <column-instance column='[elevacion]' derivation='Avg' name='[avg:elevacion:qk]' pivot='key' type='quantitative' />
+            <column caption='Elevacion' datatype='integer' name='[elevacion]' role='measure' type='quantitative' />
+            <column caption='Lugar' datatype='string' name='[lugar]' role='dimension' type='nominal' />
+            <column-instance column='[lugar]' derivation='None' name='[none:lugar:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:lugar:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:lugar:nk]' />
+              <groupfilter function='member' level='[none:lugar:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:lugar:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[avg:elevacion:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:lugar:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[avg:elevacion:qk]' scope='cols' value='Prom. Elevacion en metros' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:lugar:nk]</rows>
+        <cols>[federated.0aw18ze05z2w421e2i3oj1dazgs0].[avg:elevacion:qk]</cols>
+      </table>
+      <simple-id uuid='{B44C0638-B7E1-45D4-9677-64CEF2890CC5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Calorias-2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='7250' id='3' type-v2='text' w='55700' x='200' y='375'>
+          <formatted-text>
+            <run fontsize='16'>Calorias Consumidas a través del tiempo</run>
+          </formatted-text>
+        </zone>
+        <zone h='68625' id='6' name='CaloriasXMes' w='47300' x='400' y='9125' />
+        <zone h='12250' id='7' name='CaloriasXMes' pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]' type-v2='color' w='14000' x='2000' y='13250' />
+        <zone h='65875' id='10' name='CaloriasXKMxTiempo' w='50600' x='47800' y='9875' />
+        <zone h='34375' id='11' name='CaloriasXKMxTiempo' pane-specification-id='3' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[mi:tiempo:ok]' type-v2='size' w='8800' x='89100' y='31625' />
+        <zone h='4375' id='14' type-v2='dashboard-object' w='16400' x='82200' y='94000'>
+          <button action='' button-type='text'>
+            <button-visual-state>
+              <caption>Ir a </caption>
+              <tooltip-text>proximo</tooltip-text>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#4e79a7' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='border-color' value='#499894' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='23' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='7250' id='3' type-v2='text' w='55700' x='200' y='375'>
+                  <formatted-text>
+                    <run fontsize='16'>Calorias Consumidas a través del tiempo</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='68625' id='6' is-fixed='true' name='CaloriasXMes' w='47300' x='400' y='9125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12250' id='7' name='CaloriasXMes' pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]' type-v2='color' w='14000' x='2000' y='13250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65875' id='10' is-fixed='true' name='CaloriasXKMxTiempo' w='50600' x='47800' y='9875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='34375' id='11' name='CaloriasXKMxTiempo' pane-specification-id='3' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[mi:tiempo:ok]' type-v2='size' w='8800' x='89100' y='31625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4375' id='14' type-v2='dashboard-object' w='16400' x='82200' y='94000'>
+                  <button action='' button-type='text'>
+                    <button-visual-state>
+                      <caption>Ir a </caption>
+                      <tooltip-text>proximo</tooltip-text>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#4e79a7' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='border-color' value='#499894' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CA838EA5-06FB-4641-8ED0-DD75C3BFF590}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Carreras Personales'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone forceUpdate='true' h='63000' id='3' type-v2='text' w='70100' x='14200' y='13750'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='48'>Datos de Entenamientos/</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='48'>Carreras Personales</run>
+            <run fontalignment='1'>Æ&#10;&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='26' underline='true'>Visualización de Datos</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='26' underline='true'>2022</run>
+            <run fontalignment='1'>Æ&#10;&#10;</run>
+            <run fontalignment='1' fontcolor='#4e79a7' fontsize='26'>prof: </run>
+            <run fontalignment='1' fontcolor='#4e79a7' fontname='Slack-Lato' fontsize='26'>Ariel Aizemberg</run>
+            <run fontalignment='1'>Æ&#10;&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='26'>Manuel David Vargas Russo</run>
+          </formatted-text>
+        </zone>
+        <zone h='6500' id='4' type-v2='dashboard-object' w='16400' x='41300' y='83250'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{AEC05F32-B2C3-4F8D-9C42-EE0142B6ECF9}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>iniciar</caption>
+              <tooltip-text>próximo slide</tooltip-text>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#4e79a7' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='border-color' value='#59a14f' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='63000' id='3' type-v2='text' w='70100' x='14200' y='13750'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='48'>Datos de Entenamientos/</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='48'>Carreras Personales</run>
+                    <run fontalignment='1'>Æ&#10;&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='26' underline='true'>Visualización de Datos</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='26' underline='true'>2022</run>
+                    <run fontalignment='1'>Æ&#10;&#10;</run>
+                    <run fontalignment='1' fontcolor='#4e79a7' fontsize='26'>prof: </run>
+                    <run fontalignment='1' fontcolor='#4e79a7' fontname='Slack-Lato' fontsize='26'>Ariel Aizemberg</run>
+                    <run fontalignment='1'>Æ&#10;&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#536e8d' fontsize='26'>Manuel David Vargas Russo</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='4' type-v2='dashboard-object' w='16400' x='41300' y='83250'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{AEC05F32-B2C3-4F8D-9C42-EE0142B6ECF9}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>iniciar</caption>
+                      <tooltip-text>próximo slide</tooltip-text>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#4e79a7' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='border-color' value='#59a14f' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9ED50088-1871-4995-AE58-1A8890705A0A}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='ExploracionXLugar-1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='83875' id='3' param='vert' type-v2='layout-flow' w='98400' x='800' y='15125'>
+            <zone h='23250' id='5' name='c.p.DistXLugar' w='98400' x='800' y='15125'>
+              <layout-cache fixed-size-h='178' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='23250' id='6' name='c.p.ElevXLugar' w='98400' x='800' y='38375'>
+              <layout-cache fixed-size-h='178' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='14125' id='7' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontsize='15'>Exploración de los datos por lugar de la Carrera</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4750' id='14' type-v2='dashboard-object' w='16400' x='82200' y='93625'>
+          <button action='tabdoc:goto-sheet window-id=&quot;{D5FF9E88-F3B0-45F2-826A-706AA15C6463}&quot;' button-type='text'>
+            <button-visual-state>
+              <caption>ir a Calorias</caption>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#4e79a7' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='border-color' value='#499894' />
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone h='35875' id='21' name='c.p.ElevXFecha' w='50100' x='31200' y='61125' />
+        <zone h='9500' id='22' name='c.p.ElevXFecha' pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:elevacion:qk]' type-v2='color' w='14000' x='15200' y='64125' />
+        <zone h='12250' id='23' name='c.p.ElevXFecha' pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' type-v2='size' w='14000' x='15500' y='74000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='26' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='14125' id='7' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontsize='15'>Exploración de los datos por lugar de la Carrera</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23250' id='5' is-fixed='true' name='c.p.DistXLugar' w='98400' x='800' y='15125'>
+                  <layout-cache fixed-size-h='178' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='23250' id='6' is-fixed='true' name='c.p.ElevXLugar' w='98400' x='800' y='38375'>
+                  <layout-cache fixed-size-h='178' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35875' id='21' is-fixed='true' name='c.p.ElevXFecha' w='50100' x='31200' y='61125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9500' id='22' name='c.p.ElevXFecha' pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:elevacion:qk]' type-v2='color' w='14000' x='15200' y='64125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12250' id='23' name='c.p.ElevXFecha' pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' type-v2='size' w='14000' x='15500' y='74000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4750' id='14' type-v2='dashboard-object' w='16400' x='82200' y='93625'>
+                  <button action='tabdoc:goto-sheet window-id=&quot;{D5FF9E88-F3B0-45F2-826A-706AA15C6463}&quot;' button-type='text'>
+                    <button-visual-state>
+                      <caption>ir a Calorias</caption>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#4e79a7' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='border-color' value='#499894' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5B948B6D-38C5-440B-8A55-71EA8B343C9B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Carreras Personales'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{EFDCFAC9-EDD8-4D6D-AB74-A79F2A73059B}' />
+    </window>
+    <window class='dashboard' name='ExploracionXLugar-1'>
+      <viewpoints>
+        <viewpoint name='c.p.DistXLugar' />
+        <viewpoint name='c.p.ElevXFecha'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='c.p.ElevXLugar' />
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{AEC05F32-B2C3-4F8D-9C42-EE0142B6ECF9}' />
+    </window>
+    <window class='dashboard' name='Calorias-2'>
+      <viewpoints>
+        <viewpoint name='CaloriasXKMxTiempo'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='CaloriasXMes' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D5FF9E88-F3B0-45F2-826A-706AA15C6463}' />
+    </window>
+    <window class='worksheet' name='c.p.DistXLugar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B83058FB-A41D-4C11-AF3C-0CAB6A0573A3}' />
+    </window>
+    <window class='worksheet' name='c.p.ElevXLugar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E61A6587-81EC-4EC8-B338-86BFC8F37A3F}' />
+    </window>
+    <window class='worksheet' name='CaloriasXMes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[yr:fecha:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{923E6021-BF7C-401A-B8E1-9065C395D6D3}' />
+    </window>
+    <window class='worksheet' name='CaloriasXKMxTiempo'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='31' type='pages' />
+            <card size='46' type='filters' />
+            <card size='209' type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='3' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[mi:tiempo:ok]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8BBAD575-DA93-45E4-8B87-989DDDCA602A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='c.p.ElevXFecha'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[none:elevacion:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0aw18ze05z2w421e2i3oj1dazgs0].[sum:calorias:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC6742EA-9A35-43EE-92DF-7050F0EEA610}' />
+    </window>
+  </windows>
+</workbook>
